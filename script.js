@@ -13,7 +13,7 @@ export default function () {
     'status is 200': (r) => r.status === 200,
   });
 
-  console.log(Date.now() + "    " + res.body)
+  console.log(Date.now() + "    " + res.timings.duration)
 
   sleep(1);
 }
